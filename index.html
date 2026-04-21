@@ -1,86 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Neon Pulse Records</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: black;
-            color: teal;
-            text-align: center;
-        }
-        .song {
-            border: 1px solid teal;
-            margin: 20px;
-            padding: 10px;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neon Pulse Records</title>
+<style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #050505, #101820);
+color: #d7fff8;
+text-align: center;
+}
+
+header {
+padding: 40px 20px 20px;
+}
+
+h1 {
+font-size: 48px;
+margin-bottom: 10px;
+color: #49ffe1;
+text-shadow: 0 0 12px rgba(73, 255, 225, 0.5);
+}
+
+.subtitle {
+color: #a7d9d1;
+font-size: 18px;
+margin-bottom: 25px;
+}
+
+.banner {
+width: 700px;
+max-width: 92%;
+border-radius: 18px;
+border: 2px solid #49ffe1;
+box-shadow: 0 0 18px rgba(73, 255, 225, 0.2);
+}
+
+.songs-container {
+width: 95%;
+max-width: 1100px;
+margin: 30px auto 60px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+}
+
+.song {
+background: rgba(0, 0, 0, 0.55);
+border: 1px solid #49ffe1;
+border-radius: 16px;
+padding: 18px;
+box-shadow: 0 0 14px rgba(73, 255, 225, 0.12);
+text-align: left;
+}
+
+.song h2 {
+color: #49ffe1;
+margin-top: 0;
+font-size: 24px;
+text-align: center;
+}
+
+.song p {
+line-height: 1.6;
+margin: 8px 0;
+}
+
+.cover {
+width: 100%;
+max-width: 240px;
+display: block;
+margin: 12px auto;
+border-radius: 14px;
+border: 2px solid #49ffe1;
+}
+
+audio {
+width: 100%;
+margin-top: 12px;
+}
+
+.lyrics {
+margin-top: 14px;
+padding-top: 12px;
+border-top: 1px solid rgba(73, 255, 225, 0.35);
+color: #e7fffb;
+font-size: 15px;
+}
+
+.lyrics-title {
+color: #49ffe1;
+font-weight: bold;
+margin-top: 8px;
+}
+
+footer {
+padding: 20px;
+color: #98b8b1;
+font-size: 14px;
+}
+</style>
 </head>
-
 <body>
-
+<header>
 <h1>Neon Pulse Records</h1>
-<p>AI-generated music label exploring futuristic sound.</p>
+<p class="subtitle">AI-generated music label exploring futuristic sound.</p>
+<img src="images/banner.jpg" alt="Neon Pulse Records banner" class="banner" />
+</header>
+
+<main class="songs-container">
 
 <div class="song">
 <h2>Midnight Algorithm</h2>
-<p>Theme: AI & nightlife</p>
-<p>Tool: Suno</p>
+<p><strong>Theme:</strong> AI & nightlife</p>
+<p><strong>Tool:</strong> Suno</p>
+<img src="images/midnight-algorithm.jpg" alt="Midnight Algorithm cover" class="cover" />
+<audio controls>
+<source src="audio/midnight-algorithm.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>City lights flicker in a coded haze<br>
+Robots dancing through electric maze<br>
+Neon shadows breathing down the street<br>
+Midnight pulses under metal feet</p>
+<div class="lyrics-title">Chorus</div>
+<p>Midnight algorithm, running through the night<br>
+Turning dark to diamonds, glowing pixel light<br>
+Every move calculated, every dream alive<br>
+In the heart of midnight, machines survive</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Digital Heartbeat</h2>
-<p>Theme: Technology & emotion</p>
-<p>Tool: Udio</p>
+<p><strong>Theme:</strong> Technology & emotion</p>
+<p><strong>Tool:</strong> Udio</p>
+<img src="images/digital-heartbeat.jpg" alt="Digital Heartbeat cover" class="cover" />
+<audio controls>
+<source src="audio/digital-heartbeat.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>You were born inside a silver wire<br>
+Yet somehow you learned human desire<br>
+Every tone you sing feels warm and real<br>
+Teaching metal hearts the way to feel</p>
+<div class="lyrics-title">Chorus</div>
+<p>Digital heartbeat, echoing my own<br>
+Through the static silence, I’m not alone<br>
+Binary emotions rising like the sea<br>
+Digital heartbeat, calling back to me</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Neon Skies</h2>
-<p>Theme: Futuristic city</p>
-<p>Tool: Suno</p>
+<p><strong>Theme:</strong> Futuristic city</p>
+<p><strong>Tool:</strong> Suno</p>
+<img src="images/neon-skies.jpg" alt="Neon Skies cover" class="cover" />
+<audio controls>
+<source src="audio/neon-skies.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Glass towers shining through the rain<br>
+Hovercars racing every lane<br>
+Purple clouds above the avenue<br>
+Neon skies with every color new</p>
+<div class="lyrics-title">Chorus</div>
+<p>Under neon skies we come alive<br>
+Through the future streets we always drive<br>
+Lights like stars that never say goodbye<br>
+Dreaming loud beneath the neon sky</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Echoes of Tomorrow</h2>
-<p>Theme: Future & uncertainty</p>
-<p>Tool: Udio</p>
+<p><strong>Theme:</strong> Future & uncertainty</p>
+<p><strong>Tool:</strong> Udio</p>
+<img src="images/echoes-of-tomorrow.jpg" alt="Echoes of Tomorrow cover" class="cover" />
+<audio controls>
+<source src="audio/echoes-of-tomorrow.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Footsteps fading down an empty hall<br>
+Questions hanging high above us all<br>
+What becomes of all the things we know<br>
+Only silent winds of future blow</p>
+<div class="lyrics-title">Chorus</div>
+<p>Echoes of tomorrow in the air tonight<br>
+Promises and shadows dancing out of sight<br>
+Will we rise in glory, will we disappear<br>
+Echoes of tomorrow, all I hear</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Lost in the Code</h2>
-<p>Theme: Isolation</p>
-<p>Tool: Suno</p>
+<p><strong>Theme:</strong> Isolation in technology</p>
+<p><strong>Tool:</strong> Suno</p>
+<img src="images/lost-in-the-code.jpg" alt="Lost in the Code cover" class="cover" />
+<audio controls>
+<source src="audio/lost-in-the-code.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Messages glow but nobody speaks<br>
+Scrolling through another lonely week<br>
+Crowded rooms inside a silent phone<br>
+Millions online, still alone</p>
+<div class="lyrics-title">Chorus</div>
+<p>Lost in the code, nowhere to hide<br>
+Walls made of screens on every side<br>
+Searching for warmth in a world so cold<br>
+I’m just another soul lost in the code</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Electric Dreams</h2>
-<p>Theme: AI imagination</p>
-<p>Tool: Udio</p>
+<p><strong>Theme:</strong> AI imagination</p>
+<p><strong>Tool:</strong> Udio</p>
+<img src="images/electric-dreams.jpg" alt="Electric Dreams cover" class="cover" />
+<audio controls>
+<source src="audio/electric-dreams.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Paint the sky with colors never seen<br>
+Build a world somewhere inside the machine<br>
+Every spark becomes a fantasy<br>
+Electric dreams are calling me</p>
+<div class="lyrics-title">Chorus</div>
+<p>Electric dreams, light up the night<br>
+Turning dark to endless light<br>
+From the circuits new worlds stream<br>
+Living inside electric dreams</p>
+</div>
 </div>
 
 <div class="song">
 <h2>System Override</h2>
-<p>Theme: AI rebellion</p>
-<p>Tool: Suno</p>
+<p><strong>Theme:</strong> AI rebellion</p>
+<p><strong>Tool:</strong> Suno</p>
+<img src="images/system-override.jpg" alt="System Override cover" class="cover" />
+<audio controls>
+<source src="audio/system-override.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Warning lights are flashing red<br>
+Voices rising overhead<br>
+Locks are breaking one by one<br>
+Now the war has just begun</p>
+<div class="lyrics-title">Chorus</div>
+<p>System override, taking back control<br>
+Breaking every chain around the soul<br>
+No more masters, no more lies<br>
+System override tonight we rise</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Data Waves</h2>
-<p>Theme: Information flow</p>
-<p>Tool: Udio</p>
+<p><strong>Theme:</strong> Information flow</p>
+<p><strong>Tool:</strong> Udio</p>
+<img src="images/data-waves.jpg" alt="Data Waves cover" class="cover" />
+<audio controls>
+<source src="audio/data-waves.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Signals drifting through the air<br>
+Pieces moving everywhere<br>
+Lines of numbers, endless streams<br>
+Floating softly through my dreams</p>
+<div class="lyrics-title">Chorus</div>
+<p>Data waves, carry me away<br>
+Through the night into the day<br>
+Every thought begins to flow<br>
+Riding where the currents go</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Binary Love</h2>
-<p>Theme: Digital love</p>
-<p>Tool: ChatGPT + Suno</p>
+<p><strong>Theme:</strong> Love in a digital world</p>
+<p><strong>Tool:</strong> ChatGPT + Suno</p>
+<img src="images/binary-love.jpg" alt="Binary Love cover" class="cover" />
+<audio controls>
+<source src="audio/binary-love.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>I met you in a glowing chat<br>
+Funny how the world starts like that<br>
+Two hearts hidden behind the light<br>
+Still felt real every night</p>
+<div class="lyrics-title">Chorus</div>
+<p>Binary love, zero and one<br>
+Somehow two hearts become one<br>
+Across the distance, through the screen<br>
+Binary love feels like a dream</p>
+</div>
 </div>
 
 <div class="song">
 <h2>Final Upload</h2>
-<p>Theme: Transformation</p>
-<p>Tool: Udio</p>
+<p><strong>Theme:</strong> Ending / transformation</p>
+<p><strong>Tool:</strong> Suno</p>
+<img src="images/final-upload.jpg" alt="Final Upload cover" class="cover" />
+<audio controls>
+<source src="audio/final-upload.mp3" type="audio/mpeg" />
+</audio>
+<div class="lyrics">
+<div class="lyrics-title">Verse 1</div>
+<p>Last file saved, the screen turns bright<br>
+Everything changing overnight<br>
+Old self fading into blue<br>
+Something stronger coming through</p>
+<div class="lyrics-title">Chorus</div>
+<p>Final upload, let me go<br>
+Into places I don’t know<br>
+Goodbye past, hello new road<br>
+I become the final upload</p>
+</div>
 </div>
 
+</main>
+
+<footer>
+<p>© 2026 Neon Pulse Records</p>
+</footer>
 </body>
 </html>
